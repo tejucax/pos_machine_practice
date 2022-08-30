@@ -41,6 +41,13 @@ public class PosMachine {
                 }
             }
         }
+        return receipt;
+    }
+
+    public List<Items> getSubtotal(List<Items> receipt){
+        for(int i = 0; i < receipt.size(); i++){
+            receipt.get(i).setSubtotal(receipt.get(i).getQuantity() * receipt.get(i).getPrice());
+        }
 
         return receipt;
     }
