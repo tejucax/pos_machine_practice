@@ -24,7 +24,7 @@ public class PosMachineTest {
         List<Items> receipt = posMachine.getItemInformation(posMachine.getQuantityPerBarcode(ItemDataLoader.loadBarcodes()), ItemDataLoader.loadAllItems());
 
         List<Items> items = posMachine.getSubtotal(receipt);
-        System.out.println("items" + items.get(2).getBarcode() + items.get(2).getName() + items.get(2).getQuantity() + items.get(2).getPrice() + items.get(2).getSubtotal());
+        System.out.println("items" + items.get(0).getBarcode() + items.get(2).getName() + items.get(2).getQuantity() + items.get(2).getPrice() + items.get(2).getSubtotal() + posMachine.getTotal(items));
 
 //        assertEquals(expected, posMachine.printReceipt(ItemDataLoader.loadBarcodes()));
     }

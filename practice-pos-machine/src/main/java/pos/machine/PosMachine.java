@@ -51,4 +51,12 @@ public class PosMachine {
 
         return receipt;
     }
+
+    public int getTotal(List<Items> receipt){
+        int total = 0;
+        for(int i = 0; i < receipt.size(); i++){
+            total = total + receipt.get(i).getSubtotal();
+        }
+        return total;
+    }
 }
