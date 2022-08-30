@@ -31,4 +31,17 @@ public class PosMachine {
     public List<Item> getAllItem(){
         return ItemDataLoader.loadAllItems();
     }
+
+    public List<Items> getItemInformation(List<Items> receipt, List<Item> item){
+        for(int i = 0; i < receipt.size(); i++){
+            for(int j = 0; j < item.size(); j++){
+                if(receipt.get(i).getBarcode().equals(item.get(j).getBarcode())){
+                    receipt.get(i).setName(item.get(j).getName());
+                    receipt.get(i).setPrice(item.get(j).getPrice());
+                }
+            }
+        }
+
+        return receipt;
+    }
 }

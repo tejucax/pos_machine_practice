@@ -2,6 +2,8 @@ package pos.machine;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PosMachineTest {
@@ -19,8 +21,8 @@ public class PosMachineTest {
                 "**********************";
 
 
-
-        System.out.println("items" + posMachine.getAllItem().get(1).getName());
+        List<Items> items = posMachine.getItemInformation(posMachine.getQuantityPerBarcode(ItemDataLoader.loadBarcodes()), ItemDataLoader.loadAllItems());
+        System.out.println("items" + items.get(0).getBarcode() + items.get(0).getName() + items.get(0).getQuantity() + items.get(0).getPrice());
 
 //        assertEquals(expected, posMachine.printReceipt(ItemDataLoader.loadBarcodes()));
     }
