@@ -27,4 +27,8 @@ public class PosMachine {
         }
         return receipt;
     }
+
+    public List<Item> getAllItem(){
+        return ItemDataLoader.loadAllItems();
+    }
 }

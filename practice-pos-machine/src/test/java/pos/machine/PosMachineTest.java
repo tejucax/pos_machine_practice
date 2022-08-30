@@ -20,7 +20,7 @@ public class PosMachineTest {
 
 
 
-        System.out.println("items" + posMachine.getQuantityPerBarcode(ItemDataLoader.loadBarcodes()));
+        System.out.println("items" + posMachine.getAllItem().get(1).getName());
 
 //        assertEquals(expected, posMachine.printReceipt(ItemDataLoader.loadBarcodes()));
     }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pos.machine.PosMachineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-30T13:43:06" hostname="MNLITA15-W10" time="0.056">
+<testsuite name="pos.machine.PosMachineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-08-30T13:59:06" hostname="MNLITA15-W10" time="0.015">
   <properties/>
-  <testcase name="should_return_receipt()" classname="pos.machine.PosMachineTest" time="0.056"/>
-  <system-out><![CDATA[items2
+  <testcase name="should_return_receipt()" classname="pos.machine.PosMachineTest" time="0.015"/>
+  <system-out><![CDATA[itemsSprite
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
